@@ -1,0 +1,49 @@
+
+  .attribution { font-size: 11px; text-align: center; margin-top:20px }
+    .attribution a { color: hsl(228, 45%, 44%); }
+    
+    body{background-color: hsl(210, 46%, 95%);  display: grid;  justify-content: center}
+    .minibody div{ margin: 40px 20px; padding:20px; border-radius:10px; display:block;  font-family:Barlow Semi Condensed; height:auto; 
+     }
+     
+      .intro{font-weight:600; font-size:20px; margin:15px 0px} 
+     .story{font-size: 13px; opacity: 70% }
+     .ver{opacity: 50%; display:block; font-size:13px; font-weight:500}
+     .name{ font-size:16px; font-weight:600; position:relative; left:20px}
+     
+     .box1{ background-color:hsl(263, 55%, 52%); color:hsl(0, 0%, 100%); background-image: url("images/bg-pattern-quotation.svg"); background-position: top 0% right 20%; background-repeat: no-repeat;
+     }
+     
+     .box2{ background-color:hsl(217, 19%, 35%); color:hsl(0, 0%, 100%);
+     }
+     
+     .box3{ background-color:hsl(0, 0%, 100%); color:hsl(217, 19%, 35%); 
+     }
+     
+     .box4{ background-color:hsl(219, 29%, 14%); color:hsl(0, 0%, 100%); 
+     }
+    
+     .box5{ background-color:hsl(0, 0%, 100%); color:hsl(217, 19%, 35%); 
+     }
+
+     .pimg{ width:33px; height:auto; border-radius:50%; border: 2px solid  ; margin:0px; border:2px solid hsla(0, 0%, 100%, 0.8) 
+	}
+    
+    .pp{ display:flex; margin:0px; padding:0px}
+    
+    @media (min-width: 768px) { Body{display: grid; place-content:center;min-height:100vh}
+    
+    .minibody{display:grid; gap:15px; grid-template-columns:auto auto auto;
+    grid-template-areas:'box1 box1 box2 box5' 'box3 box4 box4 box5';}
+    
+    .minibody div{margin:0px;  position:relative;}
+	
+
+  [class^="box"]{}
+  
+  .box1{ grid-area: box1;width:500px; margin:0px}
+  .box2{ grid-area: box2;width:200px}
+  .box3{ grid-area: box3; width:230px }
+  .box4{ grid-area: box4; width:500px}
+  .box5{ grid-area: box5; width:170px}
+     }
